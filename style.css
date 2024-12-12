@@ -20,25 +20,17 @@ h1{
     margin-top: 40px;
     text-align: center;
 }
+h3{
+    text-align: center;
+}
 .box{
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 200px;
     width: 200px;
     border-radius: 50%;
-}
-.blue{
-    background-color: rgb(255, 255, 255);
-}
-.red{
-    background-color: rgb(255, 255, 255);
-}
-.yellow{
-    background-color: rgb(251, 251, 251);
-}
-.green{
-    background-color: rgb(251, 251, 251);
 }
 .container{
     /* display: flex; */
@@ -66,9 +58,48 @@ h1{
     width: 200px;
     background-size: contain;
 }
-/* .blue:active{
-    border: 4px solid blue;
-} */
+.box:hover{
+    cursor: pointer;
+}
+
+/* blincking animation */
+@keyframes blink {
+    0%,100%{background-color: white}
+    50%{opacity: 0;}
+}
+.blink{
+    animation: blink 1s linear 1s 3;
+}
+
+
+/* =================== JS classes ============== */
+.remove{
+    display: none;
+}
+.blueBox{
+    background-color:lightskyblue ;
+    border: 5px solid rgb(46, 87, 170);
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+.redBox{
+    background-color:rgb(234, 137, 137) ;
+    border: 5px solid rgb(170, 46, 46);
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+.yellowBox{
+    background-color:rgb(242, 242, 111) ;
+    border: 5px solid rgb(172, 161, 12);
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+.greenBox{
+    background-color:rgb(128, 237, 128) ;
+    border: 5px solid rgb(58, 170, 46);
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
 
 
 
