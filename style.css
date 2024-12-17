@@ -11,13 +11,13 @@
 }
 body{
     place-items: center;
-    background-image: url(background.jpeg);
+    /* background-image: url(./images/background.jpeg);
     background-size: cover; 
     background-position: center; 
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;  */
 }
 h1{
-    margin-top: 40px;
+    margin-top: 10px;
     text-align: center;
 }
 h3{
@@ -32,13 +32,24 @@ h3{
     width: 200px;
     border-radius: 50%;
 }
+.image{
+    background-image: url(./images/WhatsApp\ Image\ 2024-12-16\ at\ 23.06.19\ \(1\).jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    height: 700px;
+    width: 90%;
+}
 .container{
     /* display: flex; */
     height: 600px;
     width: 800px;
     margin-top: 50px;
 }
-.topDiv{
+.topDiv,.bottomDiv{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,11 +57,6 @@ h3{
 .middleDiv{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-}
-.bottomDiv{
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 .box img{
